@@ -17,17 +17,58 @@ body {
 }
 
 .nav{
-  width: 100%;
+  width: 30%;
   margin-left: 10px;
+  
 }
-
-.nav-item{
+.nav-item-uncollapse {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
   width: 100%;
-  font-size: 20px;
-  padding-top: 5px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
 }
-
-.nav-item a{
+.nav-item-uncollapse a {
+  color: #444;
+  cursor: pointer;
+  padding: 0px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav-item {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  background-color: white;
+  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.active, .nav-item-uncollapse:hover {
+  background-color: #ccc;
+}
+.active, .nav-item:hover {
+  background-color: #ccc;
+}
+.nav-subitem {
+  text-align: left;
+  padding-left: 20px;
+  display: none;
+  overflow: hidden;
+}
+.nav-subitem a {
+  align-items: center;
   text-decoration: none;
   color: #555555;
 }
