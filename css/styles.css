@@ -3,6 +3,9 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+lower-body {
+  padding-top: 0px;
+}
 .name-logo {
   font-family: fontawesome;
   text-decoration: none;
@@ -14,12 +17,13 @@ body {
   color: #555555;
   display: block;
   top: 17px;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
 }
 
 .nav{
   width: 25%;
   margin-left: 0px;
+  float: left;
   
 }
 .nav-item-uncollapse {
@@ -87,11 +91,15 @@ body {
   text-decoration: none;
   padding-top: 10px;
   color: #555555;
+  width: 100%;
+  height: 100%;
 }
 
-#main {
+main {
+  width: 70%;
   transition: margin-left .5s;
-  padding: 16px;
+  padding: 0px;
+  float: right;
 }
 
 @media screen and (max-height: 450px) {
