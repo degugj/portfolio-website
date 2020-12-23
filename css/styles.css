@@ -18,25 +18,26 @@ body {
 }
 
 .nav{
-  width: 30%;
-  margin-left: 10px;
+  width: 25%;
+  margin-left: 0px;
   
 }
 .nav-item-uncollapse {
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding: 0px;
   width: 100%;
   border: none;
   text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
   outline: none;
   font-size: 15px;
 }
 .nav-item-uncollapse a {
   color: #444;
   cursor: pointer;
-  padding: 0px;
-  width: 100%;
+  padding-left: 10px;
   border: none;
   text-align: left;
   outline: none;
@@ -46,7 +47,8 @@ body {
 .nav-item {
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding: 10px;
+  padding-left: 10px;
   width: 100%;
   border: none;
   text-align: left;
@@ -62,15 +64,28 @@ body {
 .active, .nav-item:hover {
   background-color: #ccc;
 }
+
+.nav-item:after {
+  content: '\002B';
+  color: #444;
+  font-weight: bold;
+  float: right;
+  margin-left: 0px;
+}
+
+.active:after {
+  content: "\2212";
+}
 .nav-subitem {
   text-align: left;
-  padding-left: 20px;
+  padding-left: 15px;
   display: none;
   overflow: hidden;
 }
 .nav-subitem a {
   align-items: center;
   text-decoration: none;
+  padding-top: 10px;
   color: #555555;
 }
 
