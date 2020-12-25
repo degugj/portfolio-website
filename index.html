@@ -10,9 +10,9 @@
       <a class="name-logo" href=#>Jack DeGuglielmo</a>
   </div>
   
-  <div class="lower-body">
+  <div class="lower-body"></div>
     <!-- https://www.w3schools.com/howto/howto_js_collapsible.asp -->
-    <div class="nav">
+    <div id="sidenav" class="nav">
         <button class="nav-item">Work Experience</button>
         <div class="nav-subitem">
           <div class="nav-subitem-link">
@@ -56,10 +56,32 @@
           <a>Contact</a>
         </div>
       </div>
-    <script src="myscripts.js"></script> 
+    
     <div class="main">
       <h1>Welcome</h1>
+      <p id="demo"></p>
+      <p id="demo2"></p>
+      
     </div>
   </div>
+  <script src="jscript\myscripts.js"></script> 
+  <script src="jscript\sticky.js"></script> 
+  <!-- <script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("sidenav");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      document.getElementById("demo").innerHTML = window.pageYOffset;
+      document.getElementById("demo2").innerHTML = navbar.offsetTop;
+      if (window.pageYOffset >= 10) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky")
+
+      }
+    }
+    </script> -->
 </body>
 </html> 

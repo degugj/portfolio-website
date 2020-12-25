@@ -24,6 +24,7 @@ lower-body {
   width: 25%;
   margin-left: 0px;
   float: left;
+  offset-top: 10px;
   
 }
 .nav-item-uncollapse {
@@ -95,12 +96,25 @@ lower-body {
   height: 100%;
 }
 
-main {
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.main {
   width: 70%;
+  height: 1000px;
   transition: margin-left .5s;
   padding: 0px;
   float: right;
 }
+
+.main h1 {
+  margin: 0px;
+}
+
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
