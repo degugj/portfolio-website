@@ -1,4 +1,5 @@
 <style>
+
 body {
   font-family: "Lato", sans-serif;
   padding: 0;
@@ -24,6 +25,8 @@ lower-body {
   padding-bottom: 5px;
   padding-left: 5px;
   padding-right: 5px;
+  background-color: rgb(232, 239, 255);/* For browsers that do not support gradients */
+  background-image: linear-gradient(rgb(216, 229, 238), rgb(232, 239, 255));
 }
 
 .nav{
@@ -150,5 +153,88 @@ lower-body {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.cd-timeline {
+  overflow: hidden;
+  padding: var(--space-lg) 0;
+  background-color:white;
+}
+
+.cd-timeline__container {
+  position: relative;
+  padding: var(--space-md) 0;
+
+  &::before { // this is the timeline vertical line
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 4px;
+  }
+}
+.cd-timeline__block {
+  display: flex;
+  @include breakpoint(md) {
+    &:nth-child(even) {
+      flex-direction: row-reverse; // for even blocks -> lay out content from right to left
+    }
+  }
+}
+
+.cd-timeline__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  @include breakpoint(md) {
+      order: 1; // flex order -> place the image after cd-timeline__content
+   }
+}
+.cd-timeline__img img{
+  border-radius: 50%;
+}
+.cd-timeline__content {
+   flex-grow: 1; // expand element so that it takes up all the available space inside its parent
+   @include breakpoint(md) {
+      width: 45%;
+      flex-grow: 0; // prevent element from growing inside its parent
+   }
+}
+
+.cd-timeline__content.text-component {
+  background-color:whitesmoke;
+}
+
+@include breakpoint(md) { // animations
+  .cd-timeline__img--hidden, .cd-timeline__content--hidden {
+    visibility: hidden;
+  }
+
+  .cd-timeline__img--bounce-in {
+    animation: cd-bounce-1 0.6s;
+  }
+}
+
+@keyframes cd-bounce-1 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);    
+  }
+}
+
+.headshot{
+  border-radius: 50%;
+  width: 200px;
 }
 </style>
