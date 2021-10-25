@@ -1,9 +1,13 @@
 <style>
+html {
+  background-color: rgb(232, 239, 255);
+}
 
 body {
   font-family: "Lato", sans-serif;
   padding: 0;
   margin: 0;
+  background-color: rgb(232, 239, 255);
 }
 
 lower-body {
@@ -35,6 +39,7 @@ lower-body {
   margin-left: 0px;
   float: left;
   padding: none;
+  background-color: (232, 239, 255);
 }
 .nav-item-uncollapse {
   color: #444;
@@ -45,12 +50,15 @@ lower-body {
   text-align: left;
   outline: none;
   font-size: 15px;
+  background-color: rgb(232, 239, 255);
+  
 }
 .nav-item-uncollapse a {
   color: #444;
   cursor: pointer;
   text-decoration: none;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(232, 239, 255);
 }
 .nav-item {
   color: #444;
@@ -62,7 +70,7 @@ lower-body {
   text-align: left;
   outline: none;
   font-size: 15px;
-  background-color: white;
+  background-color: rgb(232, 239, 255);;
   
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -89,6 +97,7 @@ lower-body {
   padding-left: 15px;
   display: none;
   overflow: hidden;
+  background-color: (232, 239, 255);
 }
 .nav-subitem a {
   align-items: center;
@@ -113,6 +122,7 @@ lower-body {
   transition: margin-left .5s;
   padding: 0px;
   float: right;
+  background-color: rgb(232, 239, 255);
 }
 
 .main h1 {

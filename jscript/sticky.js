@@ -6,8 +6,6 @@ var navbar = document.getElementById("sidenav");
 var sticky = navbar.offsetTop;
 
 function myFunction() {
-  document.getElementById("demo").innerHTML = window.pageYOffset;
-  document.getElementById("demo2").innerHTML = navbar.offsetTop;
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
