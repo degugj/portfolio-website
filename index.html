@@ -1,131 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="css\styles.css">
-<link rel="stylesheet" href="css\mainStyles.css">
-<link rel="stylesheet" href="assets\css\style.css">
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jack DeGuglielmo</title>
 </head>
-<title>Jack DeGuglielmo</title>
-<meta name="description" content="Customer and value oriented engineer from the Greater Boston area.">
 <body>
-  <div class="name-container top">
-    <a class="name-logo" href=index.html>Jack DeGuglielmo</a>
-</div>
-  <!--Navigation bar-->
-<script src="jscript\myscripts.js"></script> 
-<script src="jscript\sticky.js"></script> 
-<!--end of Navigation bar-->
+    <!-- Video Source -->
+    <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+    <section class="showcase">
+        <header>
+            <h2 class="logo"></h2>
+            <div class="toggle"></div>
+        </header>
+        <!-- <video src="https://traversymedia.com/downloads/videos/explore.mp4" muted loop autoplay></video> -->
+        <!-- <img id="imageUnderlay" src="assets/IMG_2539.jpeg"> -->
+        <div class="overlay"></div>
+        
 
-<div class="flex-container">
-  <!-- <p id="demo"></p> -->
-  <!-- <p id="demo2"></p> -->
-  <section class="cd-timeline js-cd-timeline">
-    <div class="home-portrait">
-      <p class="portrait" style="text-align: center;">
-        <img src="assets/img/jack.jpg" class="headshot">
-      </p>
+        <!-- Clickcable project item div -->
+        <!-- <div class="projectIconTitle">
+            <h2>Title</h2>
+        </div> -->
+        <div class="projectIconContainer">
+            <div class="projectIcon"><a href="#"><img src="assets/magichess2_icon.PNG"></a></div>
+            <div class="projectIcon"><a href="#"><img src="assets/servalert.PNG"></a></div>
+            <div class="projectIcon"><a href="#"><img src="assets/tykhe.png"></a></div>
+            <div class="projectIcon"><a href="#"><img src="assets/ptwr.png"></a></div>
+        </div>
+
+        <div class="text">
+            <h2>Jack</h2> 
+            <h3>DeGuglielmo</h3>
+            <p>Radar systems engineer from the Greater Boston Area. Interested in software management frameworks, automated test suites and simulation software.</p>
+            <!-- <a href="#">Explore</a> -->
+        </div>
+        <!-- <ul class="social">
+            <li><a href="#"><img src="assets/github.png"></a></li>
+            <li><a href="#"><img src="assets/linkedin.png"></a></li>
+            <li><a href="#"><img src=""></a></li>
+        </ul> -->
+    </section>
+    <div class="menu">
+        <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">My Work</a></li>
+        <li><a href="#">Resume</a></li>
+        <!-- <li><a href="#">Blog</a></li> -->
+        <li><a href="#">Contact</a></li>
+        </ul>
     </div>
-    <div class="container max-width-lg cd-timeline__container">
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--picture">
-          <img src="assets/img/magichess_icon.jpg" alt="Picture">
-        </div> <!-- cd-timeline__img -->
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
 
-        <div class="cd-timeline__content text-component">
-          <h2>MagiChess</h2>
-          <p class="color-contrast-medium">Autonomous, internet connected chessboard.<br> Using the Lichess.org API, a physical and remote player can play a physical chess globally, record, and replay games.</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 14</span>
-            <a href="magichess.html" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--movie">
-          <img src="assets/img/ServAlert.jpg" alt="Picture">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>ServAlert</h2>
-          <p class="color-contrast-medium">LTE-M Enabled Low Power Smoke Detector<br> ServAlert combines the robustness of cellular connectivity with low power design. Collectively it forms a reliable smoke monitoring system while maintaining modularity using only Arduino Shield Rev 3 compatible shields.</p>
-          
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 18</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--picture">
-          <img src="assets/img/ptwrPyart_s.png" alt="Picture">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>PTWR Graphical Interface</h2>
-          <p class="color-contrast-medium">Interface for a Legacy X-Band Weather Radar<br>Using the open source ARM radar visualization toolkit, PyArt, the PTWR Graphical Interface helps analyze radar data from the PTWR (Phase Tilt Weather Radar)</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Jan 24</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/M5.png" alt="Location">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>M5</h2>
-          <p class="color-contrast-medium">The University of Massachussetts Amherst Electrical and Computer Engineering Makerspace</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 14</span>
-            <a href="m5.html" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--location">
-          <img src="assets/img/cd-icon-location.svg" alt="Location">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Lab 68</h2>
-          <p class="color-contrast-medium">Digitally twinned electronics lab.</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 18</span>
-            <a href="#0" class="btn btn--subtle">Read more</a>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-
-      <div class="cd-timeline__block">
-        <div class="cd-timeline__img cd-timeline__img--movie">
-          <img src="assets/img/cd-icon-movie.svg" alt="Movie">
-        </div> <!-- cd-timeline__img -->
-
-        <div class="cd-timeline__content text-component">
-          <h2>Final Section</h2>
-          <p class="color-contrast-medium">This is the content of the last section</p>
-
-          <div class="flex justify-between items-center">
-            <span class="cd-timeline__date">Feb 26</span>
-          </div>
-        </div> <!-- cd-timeline__content -->
-      </div> <!-- cd-timeline__block -->
-    </div>
-  </section> <!-- cd-timeline -->
-  <script src="assets/js/main.js"></script>
-
-</div>
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+    </script>
 </body>
-</html> 
-<!--NOTE: MAKE HOME PAGE JUST THE TIMELINE. THEN ONCE YOU CLICK ON PROJECTS, NAVBAR SHOWS-->
+</html>
